@@ -11,7 +11,8 @@
 
 body {
     background: #f3f3f3;
-    height: 200vh
+    @include flex(column); 
+    justify-content: flex-start;
 }
 
 ::-webkit-scrollbar {
@@ -37,15 +38,88 @@ body {
     @include flex(row);
     .header {
         @include flex(row);
-        justify-content: flex-start;
-        min-width: 1140px;
+        justify-content: space-between;
+        width: 1140px;
         padding: 15px;
         .logo {
-            height: 70px;
+            @include flex(row);
+            // transform: translateX(-15px);
+        }
+        .flag {
+            align-self: flex-start;
+            img {
+                height: 25px;
+            }
         }
     }
     img {
         margin: 0 16px 0 0;
+    }
+}
+
+.container{
+    width: 1140px;
+    height: 2410px;
+    padding: 15px;
+    .info {
+        margin-top: 35px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        position: relative;
+        img {
+            height: 100%;
+        }
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 518px;
+            height: 100%;
+            background: $info-color;
+            padding: 0 23px 0 17px;
+        }
+        h1 {
+            font-weight: 700;
+            padding: 5px 0;
+            font-size: 26px;
+            color: #fff;
+        }
+    }
+
+    .add {
+        position: relative;
+        margin-top: 35px;
+        transform: translateX(50px);
+        @include flex(row);
+        width: 1040px;
+        height: 191px;
+        padding: 0 0 0 15px;
+        .box {
+            width: 25%;
+            @include flex(column);
+            gap: 10px;
+            
+            p {
+                text-align: center;
+                font-size: 13px;
+                color: $info-color;
+                margin: 12px 0 0 0;
+                font-weight: 700;
+            }
+        }
+        &::before {
+            z-index: -1;
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 130px;
+            background: #fff;
+        }
     }
 }
 
