@@ -43,12 +43,14 @@ body {
         padding: 15px;
         margin: 0 15px;
         .logo {
+            cursor: pointer;
             @include flex(row);
             transform: translateX(-15px);
         }
         .flag {
             align-self: flex-start;
             img {
+                cursor: pointer;
                 height: 25px;
             }
         }
@@ -174,6 +176,7 @@ body {
                         font-weight: 600;   
                         color: $info-color;
                         background: $btn-bg;
+                        cursor: pointer;
                     }
                 }
             }

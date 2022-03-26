@@ -83,6 +83,7 @@ body {
   margin: 0 15px;
 }
 .banner .header .logo {
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,6 +105,7 @@ body {
       align-self: flex-start;
 }
 .banner .header .flag img {
+  cursor: pointer;
   height: 25px;
 }
 .banner img {
@@ -335,6 +337,7 @@ body {
   font-weight: 600;
   color: #404041;
   background: #E6E7E8;
+  cursor: pointer;
 }
 .container .data .details .delivery {
   height: auto;
