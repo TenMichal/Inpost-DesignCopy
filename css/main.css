@@ -362,6 +362,7 @@ body {
           justify-content: space-between;
 }
 .container .data .details .delivery .choose .method {
+  background: #fff;
   padding: 0 12px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -411,14 +412,90 @@ body {
   font-weight: 700;
   color: #404041;
 }
-.container .data .details .delivery .choose .method .part .home {
-  width: 35px;
-}
 .container .data .details .size {
   margin-top: 60px;
   width: 100%;
-  height: 300px;
-  border: solid 1px red;
+  height: auto;
+}
+.container .data .details .size .choose {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.container .data .details .size .choose .part {
+  padding: 10px 0;
+  border: solid 1px rgba(150, 147, 147, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 31%;
+  background: #fff;
+}
+.container .data .details .size .choose .part .title {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #404041;
+}
+.container .data .details .size .choose .part img {
+  width: 35px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.container .data .details .size .choose .part .description {
+  font-size: 14px;
+  font-weight: 600;
+  color: #404041;
+  opacity: 0.6;
+  text-align: center;
+}
+.container .data .details .size .choose .part .price {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #404041;
+}
+.container .data .details .size .choose .part .info-box {
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  background: rgba(150, 147, 147, 0.2);
+  width: 15px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .container .data .summary {
   -ms-flex-item-align: start;

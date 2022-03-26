@@ -188,6 +188,7 @@ body {
                     position: relative;
                     justify-content: space-between;
                     .method {
+                        background: #fff;
                         padding: 0 12px;
                         @include flex(row);
                         border: solid 1px rgba(150, 147, 147, .2);
@@ -208,9 +209,7 @@ body {
                                 font-weight: 700;
                                 color: $info-color;
                             }
-                            .home {
-                                width: 35px;
-                            }
+                            
                         }
                     }
                 }
@@ -219,8 +218,60 @@ body {
             .size {
                 margin-top: 60px;
                 width: 100%;
-                height: 300px;
-                border: solid 1px red
+                height: auto;
+                .choose {
+                    margin-top: 10px;
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    align-items: flex-start;
+                    justify-content: space-between;
+                    .part {
+                        padding: 10px 0;
+                        border: solid 1px rgba(150, 147, 147, .2);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        position: relative;
+                        width: 31%;
+                        background: #fff;
+                        .title {
+                            text-align: center;
+                            font-size: 13px;
+                            font-weight: 700;
+                            color: $info-color;
+                        }
+                        img {
+                            width: 35px;
+                            margin-top: 40px;
+                            margin-bottom: 10px;
+                        }
+                        .description {
+                            font-size: 14px;
+                            font-weight: 600;
+                            color: $info-color;
+                            opacity: .6;
+                            text-align: center;
+                        }
+                        .price {
+                            margin-top: 15px;
+                            margin-bottom: 20px;
+                            font-size: 17px;
+                            font-weight: 600;
+                            color: $info-color;
+                        }
+                        .info-box {
+                            position: absolute;
+                            left: 5px;
+                            bottom: 5px;
+                            background: rgba(150, 147, 147, .2);
+                            width: 15px;
+                            height: 15px;
+                            @include flex(row);
+                        }
+                    }
+                }
             }
         }
         .summary {
