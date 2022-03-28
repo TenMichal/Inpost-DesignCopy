@@ -297,8 +297,21 @@ body {
                             height: 15px;
                             @include flex(row);
                         }
+                        &.active {
+                            border: 1px solid $main-color;
+                            .check-box {
+                                border: solid 2px $info-color;
+                                div {
+                                    background: $main-color;
+                                }
+                            }
+                        }
                     }
                 }
+            }
+
+            .sender {
+                margin-top: 60px;
             }
         }
         .summary {

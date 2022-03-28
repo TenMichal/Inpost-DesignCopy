@@ -536,6 +536,18 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.container .data .details .size .choose .part.active {
+  border: 1px solid #FFCD00;
+}
+.container .data .details .size .choose .part.active .check-box {
+  border: solid 2px #404041;
+}
+.container .data .details .size .choose .part.active .check-box div {
+  background: #FFCD00;
+}
+.container .data .details .sender {
+  margin-top: 60px;
+}
 .container .data .summary {
   -ms-flex-item-align: start;
       align-self: flex-start;
